@@ -1,61 +1,65 @@
 # BMI Calculator
 
-## Project Information
+A Python BMI Calculator project built for the OIBSIP Python Programming Internship.
 
-* **Name:** Muhammad Daim-ul-Hassan
-* **Track:** Python
-* **Task:** 2
-* **Task Name:** BMI Calculator
+The project includes both a Beginner command-line version and an Advanced GUI version with SQLite storage and BMI trend visualization.
 
-## Overview
+## Project Versions
 
-This project is a simple Python BMI Calculator created as part of the Oasis Infobyte Python Internship. The program takes a user's weight and height, calculates their Body Mass Index (BMI), validates the input and classifies the result into the appropriate health category.
+### Beginner Version
 
-## Features
+The Beginner version is a simple command-line BMI calculator built using basic Python.
 
-* Prompts the user to enter their weight in kilograms and height in meters.
-* Calculates BMI using the standard formula.
-* Displays the BMI value rounded to two decimal places.
-* Classifies the BMI as:
+Features:
 
-  * Underweight
-  * Normal
-  * Overweight
-  * Obese
-* Validates user input.
-* Rejects non-numeric input with a clear error message.
-* Rejects zero and negative values with a clear error message.
+- Takes weight in kilograms
+- Takes height in meters
+- Calculates BMI
+- Classifies BMI into standard categories
+- Displays BMI rounded to 2 decimal places
+- Validates non-numeric input
+- Rejects zero and negative values
 
-## BMI Formula
+### Advanced Version
 
-```text
-BMI = Weight (kg) / Height² (m²)
-```
+The Advanced version includes all Beginner features plus a full graphical interface and additional functionality.
+
+Features:
+
+- Tkinter GUI
+- Named user support
+- Weight and height input fields
+- BMI calculation
+- Colour-coded BMI results
+- Input validation
+- Multiple user support
+- SQLite database storage
+- Historical BMI records
+- BMI trend visualization using Matplotlib
+- Database read/write error handling
+- Records persist between application sessions
 
 ## BMI Categories
 
-| BMI Range      | Category    |
-| -------------- | ----------- |
-| Below 18.5     | Underweight |
-| 18.5 to 24.9   | Normal      |
-| 25.0 to 29.9   | Overweight  |
-| 30.0 and above | Obese       |
+| BMI Range | Category |
+|---|---|
+| Below 18.5 | Underweight |
+| 18.5 - 24.9 | Normal |
+| 25 - 29.9 | Overweight |
+| 30 or above | Obese |
 
 ## Technologies Used
 
-* Python 3
+### Beginner
 
-## How to Run
+- Python
 
-1. Clone the repository.
+### Advanced
 
-2. Open the project folder.
-
-3. Run the following command:
-
-```bash
-python bmi.py
-```
+- Python
+- Tkinter
+- SQLite
+- Matplotlib
 
 ## Project Structure
 
@@ -63,17 +67,7 @@ python bmi.py
 Python-Task2-BMICalculator/
 │
 ├── bmi.py
+├── advanced-bmi.py
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-```
-
-## Sample Output
-
-```text
-Enter your weight (kg): 70
-Enter your height (m): 1.75
-
-Your BMI value is: 22.86
-Category: Normal
-```
